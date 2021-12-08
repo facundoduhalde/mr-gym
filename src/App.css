@@ -37,14 +37,15 @@ main {
 }
 
 .navbar {
-  display: flex;
-  align-items: center;
-  
-  background: linear-gradient(to right, #1d9ad1, #5b79bc, #934a9c, #a62591);
-  color: white;
-  font-family: Helvetica;
-  font-weight: 300;
+  color: black !important;
+  background: linear-gradient(to right, #fff 30%, #1d9ad1, #5b79bc, #934a9c, #a62591);
 }
+.nav-link{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: black !important;
+}
+
 
 
 @keyframes App-logo-spin {
