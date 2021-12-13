@@ -14,7 +14,7 @@ const ItemCount = ({ stock, valorInicial, onAdd }) => {
                 <Card.Body>
                     <Card.Title>Colchoneta 100*50*0.50</Card.Title>
                     <Card.Text>
-                        Medidas: 100cm x 50 x 5cm. Material: Bagun tela superior e inferior. Con cierre
+                        Medidas: 100cm x 50 x 5cm Material: Bagun tela superior e inferior. Con cierre
                     </Card.Text>
                     <Card.Text>
                         Rellena espuma de polietileno de alta densidad. Material: Bagun tela superior e inferior. Con cierre
