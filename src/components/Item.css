@@ -10,6 +10,12 @@
     width: 400px;
 }
 
+.cardDetails{
+    padding: auto;
+    margin: auto;
+    border-image: linear-gradient(80deg, #1d9ad1, #5b79bc, #934a9c, #a62591) 1;
+  }
+
 .card-img-top{
     width: auto;
     height: 250px;

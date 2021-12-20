@@ -32,7 +32,6 @@ const ItemListContainer = (props) => {
         <Container>
             <h3>{props.text}</h3>
             <br />
-            {/* <ItemCount stock="10" valorInicial="1" onAdd={count => alert(`Se han agregado ${count} articulos al carrito`)}/>  */}
             {list ? <ItemList items={list}/> : <h5>Cargando...</h5>}
         </Container>
     )

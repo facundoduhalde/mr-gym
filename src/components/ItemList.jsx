@@ -6,7 +6,7 @@ const ItemList = ({items}) => (
         <div className="row">
             {
                 items.map((item, index) => (
-                 <Item title={item.title} pictureUrl={item.pictureUrl} price={item.price}/>
+                 <Item key={'Item'+item.id} title={item.title} pictureUrl={item.pictureUrl} price={item.price}/>
                 ))
             }
         </div>

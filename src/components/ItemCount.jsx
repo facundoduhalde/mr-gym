@@ -10,28 +10,16 @@ const ItemCount = ({ stock, valorInicial, onAdd }) => {
     const AddItem = () => count < stock && setCount(count + 1);
     return (
         <Container>
-            <Card border="secondary" style={{ width: '18rem' }}>
-                <Card.Body>
-                    <Card.Title>Colchoneta 100*50*0.50</Card.Title>
-                    <Card.Text>
-                        Medidas: 100cm x 50 x 5cm Material: Bagun tela superior e inferior. Con cierre
-                    </Card.Text>
-                    <Card.Text>
-                        Rellena espuma de polietileno de alta densidad. Material: Bagun tela superior e inferior. Con cierre
-                    </Card.Text>
-                    <Card.Text>
-                        Material: Bagun tela superior e inferior. Con cierre
-                    </Card.Text>
-                    <div style={{ display: 'flex'}}>
-                        <Button  variant="secondary" onClick={RemoveItem} disabled={count <= 0} style={{  margin: 'auto' }}>  -  </Button>
+                
+                    <div style={{ display: 'flex', width: '200px' }}>
+                        <Button  variant="secondary" onClick={RemoveItem} disabled={count <= 0}>  -  </Button>
                         <p style={{  margin: 'auto' }}>     {count}     </p>
-                        <Button variant="secondary" onClick={AddItem} disabled={count >= stock} style={{  margin: 'auto' }}>  +  </Button>
+                        <Button variant="secondary" onClick={AddItem} disabled={count >= stock}>  +  </Button>
                     </div>
                     <br />
-                    <Button variant="primary" onClick={() => onAdd(count)} disabled={count > stock || count <= 0} style={{  margin: 'auto' }}> 
+                    <Button variant="primary" onClick={() => onAdd(count)} disabled={count > stock || count <= 0}> 
                         Agregar al carrito </Button>
-                </Card.Body>
-            </Card>
+               
         </Container>
     )
 };
