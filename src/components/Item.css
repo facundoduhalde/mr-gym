@@ -1,4 +1,5 @@
 .card{
+    display: flex;
     padding: auto;
     margin: auto;
     justify-content: center;
@@ -6,17 +7,29 @@
     align-items: center;
     margin-bottom: 20px;
     border-image: linear-gradient(80deg, #1d9ad1, #5b79bc, #934a9c, #a62591) 1;
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 475px;
+    cursor: pointer;
+
+}
+.card:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .cardDetails{
-    padding: auto;
+    display: flex;    
+    padding: 10px;
     margin: auto;
+    border: 5px solid;
     border-image: linear-gradient(80deg, #1d9ad1, #5b79bc, #934a9c, #a62591) 1;
+    height: auto;
+    width: 650px;
+    text-align: center;
   }
+
+
 
 .card-img-top{
     width: auto;
     height: 250px;
-}
+    }
