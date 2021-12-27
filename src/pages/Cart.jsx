@@ -5,8 +5,9 @@ const Product = () => (
   <div>
     <NavBar />
     <br></br>
-    <h1>Carrito de Compras</h1>
+    <h1>Carrito de Compras </h1>
   </div>
 );
 
 export default Product;
+git 
