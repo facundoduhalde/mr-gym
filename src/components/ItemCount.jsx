@@ -3,7 +3,7 @@ import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
 import { useNavigate } from "react-router-dom";
 
-const ItemCount = ({ stock, valorInicial, onAdd }) => {
+const ItemCount = ({ stock, valorInicial = 1, onAdd }) => {
   const [count, setCount] = useState(parseInt(valorInicial));
   const RemoveItem = () => count > 0 && setCount(count - 1);
   const AddItem = () => count < stock && setCount(count + 1);
@@ -22,6 +22,10 @@ const ItemCount = ({ stock, valorInicial, onAdd }) => {
         </Button>
       </div>
       <br />
+      <div style={{ width: "auto" }}>
+        <small className="text-muted">Disponible: {stock - count}</small>
+      </div>
+      <br />
       <Button
         variant="primary"
         onClick={() => onAdd(count)}
@@ -29,7 +33,7 @@ const ItemCount = ({ stock, valorInicial, onAdd }) => {
       >
         Agregar al carrito{" "}
       </Button>
-      <Button variant="secondary" onClick={() => navigate("/")}>
+      <Button variant="danger" onClick={() => navigate("/")}>
         Volver
       </Button>
     </Container>

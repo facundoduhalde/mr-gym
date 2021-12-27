@@ -9,7 +9,7 @@ const CartWidget = (props) => {
       <img src={CartIcon} width="30px" height="30px"></img>
       <span class="badge badge-warning" id="lblCartCount">
         {" "}
-        0{" "}
+        {props.count}{" "}
       </span>
     </Nav.Link>
   );
