@@ -6,7 +6,7 @@ import CartWidget from "./CartWidget";
 import brandLogo from "../assets/img/logo-01.png";
 import { useNavigate } from "react-router-dom";
 
-function NavBar(props) {
+const NavBar = (props) => {
   const navigate = useNavigate();
   return (
     <Navbar bg="dark" variant="dark">
