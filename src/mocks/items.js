@@ -12,7 +12,7 @@ export const Items = [
         category: "Colchonetas",
         description: "Medidas: 100cm x 50 x 5cm. Rellena espuma de polietileno de alta densidad. Material: Bagun tela superior e inferior. Con cierre",
         stock: 500,
-        price: "$1500",
+        price: 1500,
         pictureUrl: img1
     },
     {
@@ -21,7 +21,7 @@ export const Items = [
         category: "Peso",
         description: "CORE BAG 10 KILOS: Rodillo con peso, relleno de arena, provisto de manijas para su agarre. Utilización: Coordinación, musculación, tonificación. Material: Tela Cobertura CORDURA , Arena. Origen: Argentina",
         stock: 100,
-        price: "$2700",
+        price: 2700,
         pictureUrl: img2
     },
     {
@@ -30,7 +30,7 @@ export const Items = [
         category: "Combos",
         description: "Par de Tobillera a eleccion de 1/2kg / 1kg. + Rueda Abdominal Premium de 180mm c/ puños de goma eva",
         stock: 5,
-        price: "$3500",
+        price: 3500,
         pictureUrl: img3
     },
     {
@@ -39,7 +39,7 @@ export const Items = [
         category: "Peso",
         description: "Medicine Ball 10 kg",
         stock: 5,
-        price: "$1800",
+        price: 1800,
         pictureUrl: img4
     },
     {
@@ -48,7 +48,7 @@ export const Items = [
         category: "Combos",
         description: "Colchoneta 1m x 50cm x 5mm, impermeable. 2 Mancuernas 3 Kg.",
         stock: 18,
-        price: "$2802",
+        price: 2802,
         pictureUrl: img5
     },
     {
@@ -57,7 +57,7 @@ export const Items = [
         category: "Combos",
         description: "Colchoneta MAT enrollable 173cm x 61cm x 10mm. 2 Mancuernas 1kg. Soga. 1 Rueda Abdominal. 5 Bandas circulares latex.",
         stock: 10,
-        price: "$4200",
+        price: 4200,
         pictureUrl: img6
     }
 ]

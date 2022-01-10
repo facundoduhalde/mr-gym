@@ -10,7 +10,7 @@ const Item = ({ id, title, category, price, pictureUrl }) => {
       <h5 className="card-title">{title}</h5>
       <h6 className="text-muted">{category}</h6>
       <img className="card-img-top" src={pictureUrl} />
-      <p className="card-text">{price}</p>
+      <p className="card-text">$ {price}</p>
     </div>
   );
 };
