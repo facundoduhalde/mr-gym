@@ -60,7 +60,7 @@ export class FirebaseConfig {
 				...doc.data(),
 			}));
 		} catch (error) {
-			console.error('getProducts', error);
+			console.error('getItemsByCategory', error);
 		}
 	}
 }
