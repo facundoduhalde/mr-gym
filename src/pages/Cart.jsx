@@ -7,7 +7,7 @@ import { Container, Button } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 
 const Cart = () => {
-  const { cartItems, clear, price, total } = useContext(CartContext);
+  const { cartItems, clearCart, price, total } = useContext(CartContext);
   const navigate = useNavigate();
   return (
     <div>
@@ -41,7 +41,14 @@ const Cart = () => {
                 ))}
             </tbody>
           </Table>
+          <div align="right">
+            <Button variant="outline-danger" onClick={() => clearCart()}>
+              Vaciar el carrito
+            </Button>
+            <br />
+          </div>
           <Container>
+          <br />
             <h4 align="right"> Total: $ {price}</h4>
           </Container>
         </Container>
