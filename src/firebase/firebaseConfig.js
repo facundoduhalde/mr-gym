@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import {getFirestore, collection, getDocs, getDoc, doc, query, where} from 'firebase/firestore'
+import {getFirestore, collection, getDocs, getDoc, doc, query, where, updateDoc, Timestamp, addDoc} from 'firebase/firestore'
 import { getAnalytics } from "firebase/analytics";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -61,6 +61,23 @@ export class FirebaseConfig {
 			}));
 		} catch (error) {
 			console.error('getItemsByCategory', error);
+		}
+	}
+
+
+	async addOrder(items, user, price, total) {
+		try {
+			const newOrder = {
+				user,
+				items,
+				date: Timestamp.now().toDate(),
+				price,
+				total,
+			};
+			const docRef = await addDoc(collection(db, 'orders'), newOrder);
+			return docRef.id;
+		} catch (error) {
+			console.error('addOrder', error);
 		}
 	}
 }
