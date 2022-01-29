@@ -28,6 +28,6 @@ const NavBar = (props) => {
       </Container>
     </Navbar>
   );
-}
+};
 
 export default NavBar;

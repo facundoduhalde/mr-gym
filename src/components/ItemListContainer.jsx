@@ -5,25 +5,14 @@ import Spinner from "react-bootstrap/Spinner";
 import ItemList from "./ItemList";
 import { ItemContext } from "../context/ItemContext";
 import { FirebaseConfig } from "../firebase/firebaseConfig";
-//import { Items } from "../mocks/items";
 
 
 const ItemListContainer = (props) => {
   const { items, setItems, load, setLoad } = useContext(ItemContext);
   const { name: categoryName } = useParams();
   const firebase = new FirebaseConfig();
-  //const [list, setList] = useState(null);
 
-  //useEffect(() => setReturnListAsyncAwait(), [categoryName]);
   useEffect(() => getItemsFromDb(), [categoryName]);
-
-  /*   let order = {
-    buyer:{name: "Facundo", phone:1133124488, email: "test@hotmail.com"},
-    items:[{id:1, title:"Item 1", price:50},{id:2, title:"Item 2", price:100}],
-    total:150
-  } */
-
-
 
   const getItemsFromDb = async () => {
     try {
@@ -45,7 +34,7 @@ const ItemListContainer = (props) => {
       <h5>{props.text}</h5>
       <br />
       {load ? (
-        <Spinner animation="border" variant="success" />
+        <div align="center" style={{ margin: "150px" }}><h5>Cargando...</h5><Spinner animation="border" variant="success" /></div>
       ) : (
         <ItemList items={items} />
       )}

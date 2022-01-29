@@ -5,7 +5,6 @@ import Container from "react-bootstrap/Container";
 import Spinner from "react-bootstrap/Spinner";
 import { FirebaseConfig } from "../firebase/firebaseConfig";
 import { ItemContext } from "../context/ItemContext";
-//import { Items } from "../mocks/items";
 
 const ItemDetailContainer = () => {
   const { id: idItem } = useParams();
@@ -37,7 +36,7 @@ const ItemDetailContainer = () => {
       {item ? (
         <ItemDetail {...item} />
       ) : (
-        <Spinner animation="border" variant="primary" />
+        <div align="center" style={{ margin: "150px" }}><h5>Cargando...</h5><Spinner animation="border" variant="primary" /></div>
       )}
     </Container>
   );

@@ -18,13 +18,10 @@ export const CartContextProvider = ({ children }) => {
         let cartElement = { item, quantity };
         let cartAux = [];
         if (isInCart(item)) {
-            //console.log("El producto ya esta en el carrito");
             cartElement = cartItems.find(element => element.item.id === item.id);
             cartElement.quantity += quantity;
             cartAux = [...cartItems];
         } else {
-            //console.log("El producto NO esta en el carrito");
-            //console.log('Id Producto:', item.id, 'Cantidad: ', quantity);
             cartAux = [cartElement, ...cartItems];
         }
 

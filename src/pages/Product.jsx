@@ -1,6 +1,5 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import Modal from "react-bootstrap/Modal";
+import Footer from "../components/Footer";
 import ItemDetailContainer from "../components/ItemDetailContainer";
 import NavBar from "../components/NavBar";
 
@@ -9,6 +8,7 @@ const Product = () => (
     <NavBar />
     <br></br>
     <ItemDetailContainer />
+    <Footer />
   </div>
 );
 

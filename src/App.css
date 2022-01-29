@@ -24,9 +24,6 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 body {
   margin: 0;
@@ -46,7 +43,32 @@ main {
   color: black !important;
 }
 
+.footer {
+  background: linear-gradient(to right, #1d9ad1, #5b79bc, #934a9c, #a62591);
+  text-align: LEFT;
+  color: white;
+  width: 100%;
+  padding: 20PX;
+  margin-top: 25px;
 
+}
+
+.footer h5 {
+  font-size: 2em;
+}
+
+.Instagram {
+  color: white;
+  margin: 5px;
+}
+.Twitter {
+  color: white;
+  margin: 5px;
+}
+.Facebook {
+  color: white;
+  margin: 5px;
+}
 
 @keyframes App-logo-spin {
   from {

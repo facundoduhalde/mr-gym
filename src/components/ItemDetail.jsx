@@ -14,7 +14,6 @@ const ItemDetail = (item) => {
   console.log(cartItems);
 
   const handleOnAdd = (quantity) => {
-    //console.log("Cantidad a agregar: ", quantity);
     setCounter(quantity);
     addItem(item, quantity);
   };

@@ -3,7 +3,6 @@ import { useNavigate } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import ItemCart from "../components/ItemCart";
 import { Container, Button, Form, Table } from "react-bootstrap";
-import { ItemContext } from "../context/ItemContext";
 import { FirebaseConfig } from "../firebase/firebaseConfig";
 
 const CartContainer = () => {
@@ -19,10 +18,6 @@ const CartContainer = () => {
   const firebase = new FirebaseConfig();
 
   const addOrderToDb = async (e) => {
-    /*       console.log(formData);
-      console.log(cartItems);
-      console.log(price);
-      console.log(total); */
     e.preventDefault();
     const idOrder = await firebase.addOrder(cartItems, formData, price, total);
     navigate(`/success/${idOrder}`);
@@ -72,12 +67,16 @@ const CartContainer = () => {
           </Container>
 
           <form class="row g-3" onSubmit={addOrderToDb}>
+            <div class="col-12" align="center">
+              <h4>Complete sus datos para la compra:</h4>
+            </div>
             <div class="col-md-6">
               <label for="name" class="form-label">
-                Nombre
+                Nombre y Apellido
               </label>
               <input
                 type="text"
+                placeholder="Ingrese su nombre y apellido"
                 class="form-control"
                 id="name"
                 value={formData.name}
@@ -92,6 +91,7 @@ const CartContainer = () => {
               </label>
               <input
                 type="email"
+                placeholder="Ingrese su e-mail"
                 class="form-control"
                 id="email"
                 value={formData.email}
@@ -100,40 +100,12 @@ const CartContainer = () => {
                 }
               ></input>
             </div>
-            <div class="col-12">
+            <div class="col-12" align="center">
               <button type="submit" class="btn btn-primary">
-                Enviar
+                Finalizar Compra
               </button>
             </div>
           </form>
-          {/* <Form  action="" onSubmit={() => this.addOrderToDb()}>
-            <Form.Group className="mb-3">
-              <Form.Label>Nombre y Apellido</Form.Label>
-              <Form.Control
-                value={formData.name}
-                onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
-                }
-                id="name"
-                placeholder="Nombre y Apellido"
-              />
-            </Form.Group>
-            <Form.Group className="mb-3">
-              <Form.Label>Email</Form.Label>
-              <Form.Control
-                value={formData.email}
-                onChange={(e) =>
-                  setFormData({ ...formData, email: e.target.value })
-                }
-                id="email"
-                type="email"
-                placeholder="Ingrese su email"
-              />
-            </Form.Group>
-            <Button variant="primary" type="submit">
-              Finalizar Compra
-            </Button>
-          </Form> */}
         </Container>
       )}
     </div>
