@@ -9,7 +9,7 @@ import Success from './pages/Success';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename='/mr-gym'>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/category/:name" element={<Home />} />
