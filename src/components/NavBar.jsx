@@ -12,7 +12,7 @@ const NavBar = (props) => {
     <Navbar bg="dark" variant="dark">
       <Container>
         <Nav.Link>
-          <img onClick={() => navigate("/")} src={brandLogo}></img>
+          <img onClick={() => navigate("/")} src={brandLogo} alt="Mr. Gym"></img>
         </Nav.Link>
         <Nav className="me-auto">
           <Nav.Link onClick={() => navigate("/")}>Inicio</Nav.Link>

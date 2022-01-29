@@ -2,13 +2,11 @@ import React, { useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import ItemCart from "../components/ItemCart";
-import { Container, Button, Form, Table } from "react-bootstrap";
+import { Container, Button, Table } from "react-bootstrap";
 import { FirebaseConfig } from "../firebase/firebaseConfig";
 
 const CartContainer = () => {
   const { cartItems, clearCart, price, total } = useContext(CartContext);
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",

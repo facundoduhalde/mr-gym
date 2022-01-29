@@ -20,10 +20,8 @@ const ItemListContainer = (props) => {
       const value = (categoryName)
         ? await firebase.getItemsByCategory(categoryName)
         : await firebase.getItems();
-      console.log(categoryName);
       setItems(value);
       setLoad(false);
-      console.log(items);
     } catch (error) {
       console.error("getItemsFromDb", error);
     }

@@ -9,7 +9,7 @@ const Item = ({ id, title, category, price, image }) => {
     <div className="card" data-id={id} onClick={() => navigate(`/item/${id}`)}>
       <h5 className="card-title">{title}</h5>
       <h6 className="text-muted">{category}</h6>
-      <img className="card-img-top" src={image} />
+      <img className="card-img-top" src={image} alt={title} />
       <h5 className="card-text" style={{ marginTop: "25px" }}>$ {price}</h5>
     </div>
   );

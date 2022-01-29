@@ -1,10 +1,8 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
 import { Instagram, Twitter, Facebook } from "react-bootstrap-icons";
 import { Container } from "react-bootstrap";
 
 const Footer = () => {
-  const navigate = useNavigate();
   return (
     <div className="footer">
       <Container>

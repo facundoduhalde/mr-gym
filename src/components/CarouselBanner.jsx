@@ -1,9 +1,7 @@
 import React from "react";
 import Carousel from "react-bootstrap/Carousel";
-import { useNavigate } from "react-router-dom";
 
 const CarouselBanner = () => {
-  const navigate = useNavigate();
   return (
     <Carousel>
       <Carousel.Item>

@@ -14,7 +14,7 @@ const SuccessContainer = () => {
         </small>
       </p>
       <div align="center">
-        <img src="https://firebasestorage.googleapis.com/v0/b/mr-gym.appspot.com/o/logogrande-01.png?alt=media&token=cd9c42be-a5c4-4958-96e5-4ed3798bfcff"></img>
+        <img src="https://firebasestorage.googleapis.com/v0/b/mr-gym.appspot.com/o/logogrande-01.png?alt=media&token=cd9c42be-a5c4-4958-96e5-4ed3798bfcff" alt="Mr. Gym"></img>
       </div>
     </Container>
   );

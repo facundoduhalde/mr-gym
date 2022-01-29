@@ -8,7 +8,7 @@ const ItemCart = (product) => {
   const { id, title, image, price } = item;
   return (
     <tr data-id={id}> 
-      <td align="center"><img src={image} width="200px"></img></td>
+      <td align="center"><img src={image} width="200px" alt={title}></img></td>
       <td align="center" valign="middle">{title}</td>
       <td align="center" valign="middle">{quantity}</td>
       <td align="center" valign="middle">$ {price * quantity}</td>

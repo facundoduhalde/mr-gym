@@ -7,11 +7,9 @@ import { Container } from "react-bootstrap";
 
 const ItemDetail = (item) => {
   const { id, title, description, category, image, price, stock } = item;
-  const { addItem, cartItems } = useContext(CartContext);
+  const { addItem } = useContext(CartContext);
   const navigate = useNavigate();
   const [counter, setCounter] = useState(null);
-
-  console.log(cartItems);
 
   const handleOnAdd = (quantity) => {
     setCounter(quantity);

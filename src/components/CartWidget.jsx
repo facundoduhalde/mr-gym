@@ -11,7 +11,7 @@ const CartWidget = () => {
   const {total} = useContext(CartContext);
   return (
     <Nav.Link onClick={() => navigate("/cart")}>
-      <img src={CartIcon} width="30px" height="30px"></img>
+      <img src={CartIcon} width="30px" height="30px" alt="Carrito de Compras"></img>
       <span class="badge badge-warning" id="lblCartCount">
         {total}
       </span>
